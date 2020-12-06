@@ -1,0 +1,10 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://cognito-idp.eu-west-1.amazonaws.com/eu-west-1_91LG7IGPW
+#see configuration https://cognito-idp.eu-west-1.amazonaws.com/eu-west-1_91LG7IGPW/.well-known/openid-configuration
+
+#"https://christophe-test-pool.auth.eu-west-1.amazoncognito.com/oauth2/token"
+#"https://christophe-test-pool.auth.eu-west-1.amazoncognito.com/oauth2/token"

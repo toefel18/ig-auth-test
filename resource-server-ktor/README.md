@@ -1,7 +1,7 @@
 https://docs.aws.amazon.com/cognito/latest/developerguide/token-endpoint.html
 
 
-curl -X POST https://microservices-security.auth.eu-west-1.amazoncognito.com/oauth2/token \
+curl -X POST https://cognito-idp.eu-west-1.amazonaws.com/eu-west-1_91LG7IGPW/oauth2/token \
 -H 'Content-Type: application/x-www-form-urlencoded' \
 -H 'Authorization: NGZudjBmYjhlaTA3MjFzODN1NnNpcmk4YXU6NTZlN3Q3aGkwZGtrdmM5M29zZTA2cW5ydDBwYWpibDFoZmlrbDY0dXNtMTM1cGk4dDZp' \
 -d "grant_type=client_credentials" \

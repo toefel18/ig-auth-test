@@ -3,16 +3,10 @@
  */
 package nl.toefel.clientapp
 
-import java.net.URLEncoder
 import java.util.Base64
 
+Retrofit.
 
-class App {
-    val greeting: String
-        get() {
-            return "Hello world."
-        }
-}
 
 fun main(args: Array<String>) {
 println(Base64.getEncoder().encodeToString("4fnv0fb8ei0721s83u6siri8au:56e7t7hi0dkkvc93ose06qnrt0pajbl1hfikl64usm135pi8t6i".toByteArray()))

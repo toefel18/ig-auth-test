@@ -1,5 +1,6 @@
 package nl.toefel.resourceserver
 
+import nl.toefel.resourceserver.Customer
 import org.springframework.http.HttpStatus.BAD_REQUEST
 import org.springframework.http.HttpStatus.NOT_FOUND
 import org.springframework.web.bind.annotation.DeleteMapping
@@ -19,6 +20,10 @@ val customerRepository = mutableMapOf(
 
 @RestController
 class SecuredController {
+    @GetMapping("/actuator/health")
+    fun getHealth(): String = """{"status": "UP"}"""
+
+
     @PostMapping("/customers")
     fun createCustomer(@RequestBody newCustomer: Customer): Customer {
         if (customerRepository.containsKey(newCustomer.id)) {
