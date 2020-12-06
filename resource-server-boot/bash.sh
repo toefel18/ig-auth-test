@@ -7,6 +7,23 @@ curl -X POST "https://christophe-test-pool.auth.eu-west-1.amazoncognito.com/oaut
 -d "scope=http://localhost:8080/customer.read"
 
 
+JWT returned:
+{
+  "kid": "MSe012wwaVdiwEYMT+Y1BhYmmySBVXLqP+DcOjkzTz8=",
+  "alg": "RS256"
+}
+{
+  "sub": "2s5uvggro3karqb05g1m0ml0e5",
+  "token_use": "access",
+  "scope": "http://localhost:8080/customer.read",
+  "auth_time": 1607283186,
+  "iss": "https://cognito-idp.eu-west-1.amazonaws.com/eu-west-1_91LG7IGPW",
+  "exp": 1607286786,
+  "iat": 1607283186,
+  "version": 2,
+  "jti": "cd3f0c19-410c-4532-87c8-1de5ec4f3eed",
+  "client_id": "2s5uvggro3karqb05g1m0ml0e5"
+}
 
 
 curl -X GET "https://christophe-test-pool.auth.eu-west-1.amazoncognito.com/oauth2/userInfo" \
@@ -19,3 +36,5 @@ curl -X POST https://cognito-idp.eu-west-1.amazonaws.com/eu-west-1_91LG7IGPW/tok
 -H 'Content-Type: application/x-www-form-urlencoded' \
 -H 'Authorization: bearer MnM1dXZnZ3JvM2thcnFiMDVnMW0wbWwwZTU6YjQyMHZxbzk5dG8wNHM3bTYzaGQzNHRuZTVraDdkZ25oZXFzcm50cGNiOHQzamllNGRx' \
 -d "grant_type=client_credentials&client_id=2s5uvggro3karqb05g1m0ml0e5&scope=http://localhost:8080/customer.read&redirect_uri=http://localhost:8080/customers"
+
+
